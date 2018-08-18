@@ -28,15 +28,6 @@
 ### 資源送修
 ![repair](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuUAoUhvkuVC9RIyQMgqKTEqKD5viRd-sQyBBXiOd-zTfSg5o5VJi5AoUxDt_VCeAi7ehXQVhMvxiN_YoOTRp-Kkvk1nIyrA0XW80)
 
-### 資源借用
-![request](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuR9widV_yoahNZIqMYdesYbelDZS_cpNXASDyu62cbmEgNafG5K0)
-
-### 資源歸還
-![return](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuUAoUhvkuVC9RIyQMgqKTEqKD5viRd-sQyApjJjUDhLeSd4vfEQb0DK10000)
-
-### 待辦事項
-![todo](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuUAoUh9t__CfAruqj5efwDefQ3pTr_fYtx8dkxfVBcZLLB1IUB5z_jEcDLneuZQw2bOlDYruiMdDarsxh83AdiwUzs9P6nUNGsfU2j1S0000)
-
 ## Sequence diagram
 
 ### Connector
