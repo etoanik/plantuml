@@ -26,10 +26,10 @@
 ![record](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuUAoUh9t__CfAruqj5efwDefQ3oRq_nYxOONAsQyx6dHv4BbAkYM5kZMW1HjRNo-ell5mXLFfwt3K6IZgs3regCTAFXarwwdanTQALWfFD-mzzc27UWgzLBoo_FqWEOztTVwOj-o9xkwNoverUJYSaZDIm4w3W00)
 
 ### 資源送修
-![repair](http://ww.plantuml.com/plantuml/png/SoWkIImgAStDuUAoUhvkuVC9RIyQMgqKTEqKD5viRd-sQyBBXiOd-zTfSg5o5VJi5AoUxDt_VCeAi7ehXQVhMvxiN_YoOTRp-Kkvk1nIyrA0XW80)
+![repair](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuUAoUhvkuVC9RIyQMgqKTEqKD5viRd-sQyBBXiOd-zTfSg5o5VJi5AoUxDt_VCeAi7ehXQVhMvxiN_YoOTRp-Kkvk1nIyrA0XW80)
 
 ### 資源借用
-![request](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuUAoUh9t__CfAruqj5efwDefQBpOtFviruId3VE1WffSN0wfUIb0TG00)
+![request](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuR9widV_yoahNZIqMYdesYbelDZS_cpNXASDyu62cbmEgNafG5K0)
 
 ### 資源歸還
 ![return](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuUAoUhvkuVC9RIyQMgqKTEqKD5viRd-sQyApjJjUDhLeSd4vfEQb0DK10000)
