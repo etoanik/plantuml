@@ -1,0 +1,45 @@
+@startuml
+|Programmer|
+start
+
+repeat
+    repeat
+        :**push** to **develop** branch;
+        |GitLab CI|
+        :**deploy_test**;
+        :**test_test**;
+        :**start_test**;
+        |Odoo|
+        :**upgrade**;
+    repeat while (success?)
+
+    |Programmer|
+
+    :**marge** to **master** branch;
+    fork
+        |GitLab CI|
+        :**deploy_prod**;
+        |Programmer|
+        :**manual**;
+        |GitLab CI|
+        :immediately;
+    fork again
+        |GitLab CI|
+        :**schedule_prod**;
+        |Programmer|
+        :**manual**;
+        |GitLab CI|
+        :GitLab Schedule;
+    end fork
+
+    | Switch |
+    :**Connections-Shutdown**;
+    |Odoo|
+    :**upgrade**;
+    | Switch |
+    :**Enable**;
+
+repeat while (success?)
+
+stop
+@enduml

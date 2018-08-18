@@ -1,0 +1,77 @@
+@startuml
+abstract class ExternalBinding
+abstract class ConnectorBackend
+abstract class OdooBinding #SkyBlue {
+    backend_id
+    external_id
+    sync_date
+}
+class ConnectorUnit {
+    _model_name
+}
+class OdooBackend #SkyBlue
+class GenericAPIAdapter #SkyBlue
+class GenericCRUDAdapter #SkyBlue
+class OdooBinder #SkyBlue
+class OdooModelBinder #SkyBlue
+class OdooImportMapper #SkyBlue
+class OdooExportMapper #SkyBlue
+class OdooExporter #SkyBlue {
+    _get_remote_model()
+}
+class OdooModelExporter #SkyBlue {
+    match_external_record()
+}
+class OdooImporter #SkyBlue {
+    _get_remote_model()
+}
+class OdooDeleter #SkyBlue {
+    _get_remote_model()
+}
+class FlowUser #Pink
+class OdooFlowUser #LightGreen {
+    odoo_id
+}
+class OdooSyncAdapter #LightGreen
+class OdooSyncBinder #LightGreen
+class FlowUserExportMapper #LightGreen
+class OdooSyncExporter #LightGreen
+class OdooSyncDeleter #LightGreen
+
+ExternalBinding <|-- OdooBinding
+OdooBinding <|-- OdooFlowUser
+FlowUser <|-- OdooFlowUser
+
+ConnectorBackend <|-- OdooBackend
+
+ConnectorUnit <|-- BackendAdapter
+BackendAdapter <|-- CRUDAdapter
+BackendAdapter <|-- GenericAPIAdapter
+GenericAPIAdapter <|-- GenericCRUDAdapter
+CRUDAdapter <|-- GenericCRUDAdapter
+GenericCRUDAdapter <|-- OdooSyncAdapter
+
+
+ConnectorUnit <|-- Binder
+Binder <|-- OdooBinder
+OdooBinder <|-- OdooModelBinder
+OdooModelBinder <|-- OdooSyncBinder
+
+ConnectorUnit <|-- Mapper
+Mapper <|-- ImportMapper
+ImportMapper <|-- OdooImportMapper
+Mapper <|-- ExportMapper
+ExportMapper <|-- OdooExportMapper
+ExportMapper <|-- FlowUserExportMapper
+
+ConnectorUnit <|-- Synchronizer
+Synchronizer <|-- Exporter
+Exporter <|-- OdooExporter
+OdooExporter <|-- OdooModelExporter
+OdooModelExporter <|-- OdooSyncExporter
+Synchronizer <|-- Importer
+Importer <|-- OdooImporter
+Synchronizer <|-- Deleter
+Deleter <|-- OdooDeleter
+OdooDeleter <|-- OdooSyncDeleter
+@enduml

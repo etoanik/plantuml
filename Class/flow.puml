@@ -1,0 +1,50 @@
+@startuml
+class 會議.會議記錄 #MistyRose
+
+class 簽核人 {
+    呈核人
+    簽核人
+    批示
+}
+
+class 表單流程 {
+    單號
+    主旨
+    申請人
+}
+
+abstract AbstractFlow {
+    default_flow_user()
+    process_flow_submit()
+    process_flow_cancel()
+    process_flow_draft()
+    process_flow_reject()
+    process_flow_accept()
+}
+
+class 表單 {
+    表單代碼
+    模型
+}
+
+class 簽核路徑 {
+    路徑代碼
+    簽核天數
+}
+
+class 路徑簽核人 {
+    簽核部門
+    簽核員工
+    簽核職稱
+}
+
+表單流程 "1" *-left- "*" 簽核人
+表單流程 *-right- 表單
+表單 "1" *-right- "*" 簽核路徑
+簽核路徑 "1" o-right- "*" 簽核路徑規則
+簽核路徑 "1" *-- "*" 路徑簽核人
+路徑簽核人 "1" o-right- "*" 路徑簽核人規則
+路徑簽核人 "1" o-down- "*" 簽核人角色
+表單流程 <|-- AbstractFlow
+AbstractFlow <|--- 會議.會議記錄
+@enduml

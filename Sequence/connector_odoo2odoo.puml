@@ -1,0 +1,71 @@
+@startuml
+actor User
+
+User -> Event: delay_export_binding()
+
+database JobStorage
+Event -> JobStorage: delay()
+
+JobStorage -> Job: export_binding()
+activate Job
+
+Job -> Exporter: run()
+activate Exporter
+
+Exporter -> Exporter: check_export()
+activate Exporter
+deactivate Exporter
+
+loop
+    Exporter -> Exporter: export_m2o_dependencies()
+    activate Exporter
+    deactivate Exporter
+end
+
+Exporter -> Exporter: match_external_record()
+activate Exporter
+deactivate Exporter
+
+Exporter -> Exporter: create_record()
+activate Exporter
+
+Exporter -> Mapper: map_record()
+activate Mapper
+
+Mapper -> Mapper: odoo2odoo()
+activate Mapper
+deactivate Mapper
+
+Exporter <-- Mapper
+deactivate Mapper
+
+participant Binder
+
+Exporter -> BackendAdapter: create()
+activate BackendAdapter
+
+boundary "Remote Odoo" as Remote
+BackendAdapter -> Remote: << RPC >>
+|||
+BackendAdapter <-- Remote
+
+Exporter <-- BackendAdapter
+deactivate BackendAdapter
+
+Exporter -> Binder
+activate Binder
+
+Binder -> Binder: bind()
+activate Binder
+deactivate Binder
+
+Exporter <-- Binder
+deactivate Binder
+deactivate Exporter
+
+Job <-- Exporter
+deactivate Exporter
+
+JobStorage <-- Job
+deactivate Job
+@enduml
