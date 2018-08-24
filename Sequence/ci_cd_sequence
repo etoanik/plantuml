@@ -1,0 +1,71 @@
+@startuml
+title CI/CD Sequence Diagram
+
+actor Developer
+actor Leader
+
+Developer -> "Local Repository": git commit
+
+"Local Repository" -> "Local Repository": check-autopep8
+
+Developer <-- "Local Repository": pass or failed
+
+Developer -> GitLab: git push to develop
+
+GitLab -> Runner
+activate Runner
+
+Runner -> "Dev Env": ssh
+
+"Dev Env" -> "Dev Env": deploy
+activate "Dev Env"
+deactivate "Dev Env"
+"Dev Env" -> "Dev Env": test
+activate "Dev Env"
+deactivate "Dev Env"
+"Dev Env" -> "Dev Env": start
+activate "Dev Env"
+deactivate "Dev Env"
+
+Runner <-- "Dev Env"
+
+GitLab <-- Runner
+deactivate Runner
+
+Developer <-- GitLab: notification
+
+...
+
+Developer -> GitLab: Create merge request: develop to master
+activate GitLab
+
+loop
+    Leader -> GitLab: code review and comment
+    activate GitLab
+    Developer <-- GitLab
+    deactivate GitLab
+end
+
+Leader -> GitLab: merge
+deactivate GitLab
+
+GitLab -> Runner
+activate Runner
+
+Runner -> "Prod Env": ssh
+
+"Prod Env" -> "Prod Env": test
+activate "Prod Env"
+deactivate "Prod Env"
+"Prod Env" -> "Prod Env": schedule
+activate "Prod Env"
+deactivate "Prod Env"
+
+Runner <-- "Prod Env"
+
+GitLab <-- Runner
+deactivate Runner
+
+Developer <-- GitLab: notification
+
+@enduml
