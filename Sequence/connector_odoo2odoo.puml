@@ -1,4 +1,6 @@
 @startuml
+title Odoo Connector Sequence Diagram
+
 actor User
 
 User -> Event: delay_export_binding()
