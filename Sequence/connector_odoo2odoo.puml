@@ -5,10 +5,10 @@ actor User
 
 User -> Event: delay_export_binding()
 
-database JobStorage
-Event -> JobStorage: delay()
+database "Jobs Queue"
+Event -> "Jobs Queue": delay()
 
-JobStorage -> Job: export_binding()
+"Jobs Queue" -> Job: export_binding()
 activate Job
 
 Job -> Exporter: run()
@@ -68,6 +68,6 @@ deactivate Exporter
 Job <-- Exporter
 deactivate Exporter
 
-JobStorage <-- Job
+"Jobs Queue" <-- Job
 deactivate Job
 @enduml
