@@ -1,50 +1,63 @@
 @startuml
-class 會議.會議記錄 #MistyRose
+title 表單類別圖
 
-class 簽核人 {
+class 會議.會議記錄 #MistyRose
+class 人事.請假單 #MistyRose
+class 採購.請購單 #MistyRose
+
+class 簽核人員 {
     呈核人
     簽核人
-    批示
+    批示內容
+    簽核時間
+    狀態
 }
 
-class 表單流程 {
-    單號
+class 表單主檔 {
+    表單單號
     主旨
     申請人
+    申請單位
 }
 
 abstract AbstractFlow {
-    default_flow_user()
-    process_flow_submit()
-    process_flow_cancel()
-    process_flow_draft()
-    process_flow_reject()
-    process_flow_accept()
+    flow_item_id: 表單主檔
+
+    process_flow_submit(): 表單啟動事件
+    process_flow_cancel(): 表單取消事件
+    process_flow_draft(): 表單撤消事件
+    process_flow_reject(): 表單拒絕事件
+    process_flow_accept(): 表單同意事件
 }
 
-class 表單 {
+class 簽核表單 {
     表單代碼
+    表單大類
     模型
 }
 
-class 簽核路徑 {
+class 簽核路徑主檔 {
     路徑代碼
+    定義
     簽核天數
 }
 
-class 路徑簽核人 {
+class 簽核路徑明細 {
     簽核部門
     簽核員工
     簽核職稱
+    層級
 }
 
-表單流程 "1" *-left- "*" 簽核人
-表單流程 *-right- 表單
-表單 "1" *-right- "*" 簽核路徑
-簽核路徑 "1" o-right- "*" 簽核路徑規則
-簽核路徑 "1" *-- "*" 路徑簽核人
-路徑簽核人 "1" o-right- "*" 路徑簽核人規則
-路徑簽核人 "1" o-down- "*" 簽核人角色
-表單流程 <|-- AbstractFlow
+表單主檔 "1" *-left- "*" 簽核人員
+表單主檔 *-right- 簽核表單
+簽核表單 "1" *-right- "*" 簽核路徑主檔
+簽核路徑主檔 "1" o-right- "*" 簽核路徑規則
+簽核路徑主檔 "1" *-- "*" 簽核路徑明細
+簽核路徑明細 "1" o-right- "*" 路徑明細規則
+簽核路徑明細 "1" o-down- "*" 路徑明細角色
+表單主檔 <|-- AbstractFlow
 AbstractFlow <|--- 會議.會議記錄
+AbstractFlow <|--- 人事.請假單
+AbstractFlow <|--- 採購.請購單
 @enduml
