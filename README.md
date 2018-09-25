@@ -3,44 +3,45 @@
 ## Class Diagram
 
 ### Connector odoo2odoo
-![connector_odoo2odoo](http://www.plantuml.com/plantuml/png/dLHDRnCn4BtFhrY92npw3pYqQKiLYOgAAkULQu-ILVmHUHtH0FtlTB6zF0tU29hBUkQz-V3pJ2x7f68wEalgQKnHwTHfgyQnktrE7Bsogy6RmMybV1syPvr2N2czPsya_iM4K4AxTu_xqyeUkVj1tUllAKVqW_bjSYbKxV7aTMzKOdeXKMlZXrIIz2uOjhrNRk91pPnyhbcWE_OS1ttriBuowf0uBX2klsvkMWouKHkvdzfPXjVk46AwLuT36xzz_XSSi2h3bbCVsON4MP7t7-X5jhKKx5JIktxMFx8EqOW4Q_UsmZTi-J_3FjdmRJDECG-3tqEkFy3dORjBTv7PbtpX5Pu61qi_dhokRmWHWf7VIXAW3NYIStaoxIobQe4C4llLVVnvSO5RG_aC84f1zT20IEucvCwEYG8hbV625UK8pLe6jgE5_xrb93o2YFdWlCX15r3bgrFpVld1QVfWN77N8q2uquGsa72McbNp_53-P1V-5n0Oa1IzX20E9O41iUSfhV5kTpvTR1U37xvp93Imaxa4TZ13Q0XPaOCUAUtCmmvGnrb3eTzIL5b6ob-8gS1ybgrKmYLxStJs5m00)
+![connector_odoo2odoo](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/etoanik/plantuml/master/Class/connector_odoo2odoo.puml)
 
 ### 簽核表單
-![flow](http://www.plantuml.com/plantuml/png/VPHHJzDG5CVVxwTevekIZCHNumE--EQBNs0ftPtMT1jfBo46IK0WR2aosLW5Gi1gSKNZ789iRC2dwRrjluMtlIKvjPtBalQSypl_StRktPapYAoJnQg6Y4eqB0MsIwr-Q1_JnYaziX1IDDam97Qq7lmSp8f7uEw7snlIWnUgGTw-h1iuWRpns1kRiy4FawvjSPKimNRiuE8c8lZZ7o91_C4j-ppYKhHZIyj8uX-wsn2ksE80i5ZpsdV6TBD7-zSWp0xUXrP7ECnLjccYbVi2uXTwemdxlfSK42x-3GvEOaSK_UIAzBqBtYul1wme__P392dF6qIN5I8zIrwUQ_MbHBN2NqigmTMIMdwIAelY-89ULx1Xb6BEM9olgkJXetkGTa-esUNZz2PNMLgHQmhM0Dsos5LZ6btMvGgGPctdFx2Ets05qcRR_pEr4LbHy09i--CsssWbz4hwJ0MH6hat-Uf_kO5duFJutHCdwzhqsCo837_HkztKwGaNaABzG__k3Dm6wfonxYXVYktl-9S3QHdWuReRMgimlsFJuIbm16j3tpqNnSuT__8mqavThCBZWZHJr7255AN2J25rhLCaftJrrMkEmIaXQ0WnWK4rE0i4NQ27-hIqu5kBDhVoqaGrc04dXRAkR24O1OLoqyhrfLfELgyTD7-d9_Nq7UyA_j4GDE9mCMzJvM2PNPN3PBOLciErCb-LVm40)
+![flow](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/etoanik/plantuml/master/Class/flow.puml)
 
 ### 物品主檔
-![item](http://www.plantuml.com/plantuml/png/VPFBJi9058RtynIJBfkKnBqnl81nvGCGnKk2bt1PgGj44IGOZ8WIG2w9KemY1AkL2hnCvy9RE70KPmYN3Jd_VES_dPw_tb3O5mn7zW9e8-0BXJ1nAkGspZiNtBp4HmYB7qYkxT3dx5ZWqJTcLTrk5vsWlpRR9gTvSXCbcGHxF_ljPCc6aAHEEENM9wcdwDqZBPObcLaPMYfBChsgyiutoJL9x6iq2kn88ZwiFc33MC6oe9vgInes8eS6rdGDqsACcmbMlsQ5vW8Cnj7aWFUVnEKMaLQKcIdMwj6AFPi4Jha_DVEqcoEPD3FRuwUNXNaMAYGNS-V81Lu-5eZO9ilMFF0tYnfPwKPmTtid38RyDSdEwoga2wVrjLMFs8VRIyyo2FYte5z94L8YTG2K6Yee52_mcIn3HVJH9gOpDuqOs7NkwKkVragkyu7GiE3mHfkr1fv9Vk7r_0_n-lStnQVm0m00)
+![item](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/etoanik/plantuml/master/Class/item.puml)
 
 ### 會議管理
-![meeting](http://www.plantuml.com/plantuml/png/TPBVIW915CRlvoc6xKxOXUuZV85kUWCfAy4otFKYAZ3pJxK6WcAPWcrXBE5g48NibhtC_9bvYoPdYvbazsROStvxlc-_CsdRoHITqduUREKpjWtPQuE4BLmUqeuFLpPojdEqMR2pSPTtNJ8uv-KxEXmjTqMB1I_Cl-NDwd9NJYRZAzvhmMC0nOEx4_Hv3KvZGgfA3iQ8h95UXNVRYm89PhnILGhKBPEQAuO0-IMQHUIv0urL0wPC4nef0p8_m9KUlw_H_YIPKWq2e0QnmCnYRdVFaQZg5EYsKx-SgWE0bfnLEhJM8VEQA7H9lswHcv4uTAQWpv4YEl8d9OD7qIDz-D0GQJp-lOk6gACmn6ql4K9V7ehUyUMK3CQ949xM4w2r4pEVtN5CxIe0ydP6VTUI1_DyiVOVyZ-bl6XxmVCQcp-9gCG2GJfxi2rkwpS0)
+![meeting](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/etoanik/plantuml/master/Class/meeting.puml)
 
 ## Usecase diagram
 
 ### 安排會議
-![find time](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuUAoUh9t__CfAruqj5efwDefQ3nTr_ciRzApESqlrcxGv4BbAjZebHReAMWycx_qnSf5BwSrl5Yn2oZxl7yjVfLFTkrwiglxnUhkfutjM5GMPQPdbC0LlrZO0rJyR7OR5fKf-ULvS8NFEhjVB9mCidz5Dq6rgnO16J2rN0wfUIb0tmC0)
+![find time](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/etoanik/plantuml/master/Usecase/usecase_find_time.puml)
 
 ### 開會通知
-![notice](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuUAoUh9t__CfAruqj5efwDefQBoSrlriJlFBXbdFvo_Lv4BbAjZesIbOlUXe1mezsRNhwUI5LWfM2a_NjppPln2YH45VuUdiUI-MjQ7hr0Fgr7YniEV9hkvdiziqGTecz3nRkvGB8GXLv9wVdvwJ-cpwKbHrN0wfUIb05mC0)
+![notice](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/etoanik/plantuml/master/Usecase/usecase_notice.puml)
 
 ### 會議記錄
-![record](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuUAoUh9t__CfAruqj5efwDefQ3oRq_nYxOONAsQyx6dHv4BbAkYM5kZMW1HjRNo-ell5mXLFfwt3K6IZgs3regCTAFXarwwdanTQALWfFD-mzzc27UWgzLBoo_FqWEOztTVwOj-o9xkwNoverUJYSaZDIm4w3W00)
+![record](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/etoanik/plantuml/master/Usecase/usecase_record.puml)
 
 ### 資源送修
-![repair](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuUAoUhvkuVC9RIyQMgqKTEqKD5viRd-sQyBBXiOd-zTfSg5o5VJi5AoUxDt_VCeAi7ehXQVhMvxiN_YoOTRp-Kkvk1nIyrA0XW80)
+![repair](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/etoanik/plantuml/master/Usecase/usecase_repair.puml)
 
 ## Sequence diagram
 
 ### Odoo Connector
-![connector_odoo2odoo](http://www.plantuml.com/plantuml/png/ZLJ1QXin4BtFLmm-jGTVSboCIPFsKYXjKtesiveX4TcLLAqsDE2FhsOLWwgg8Jv8dfdtdju3QQ-NH36jymJ9fadmAtkFjzuvCSb7_26_Ld56yAEb-qWp06tzduj405rnVyHFJ-BIW2mJFP_aT_0ndKRhsBhxT-y1c1ADj0ZkFljnmU-hhBA3ZQJikliYegowhR1S3jYAgntxH4bq392NpS-6aZXWN5qDkWm0Bl_-Xfi7COyl2ReybexMv7q0pB-kwCNpVELFB44SYpDMbgold7_rjDix9pF_vtkcP1woxrmucavHZ8_yzW1zKHCbmpfYVU8N2g5u2HrEcGAKlSPxzlvAbmwSfUbKHnxs-rTWWMAonWPo2M-iuzRj3Pb7SVo1ALHXAmiD0c3qgsEApxYxazcdybHsI0kM6cf2EQGC1ZmSyExRBHwFS3wVMvpcAC0cN6E0fM-j2LR2LZ5A3RhNY077l6lW1idIT5fRVLZ_QkcBLDQh5x1vwmhFTOtKybeSwtVg3m00)
+![connector_odoo2odoo](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/etoanik/plantuml/master/Sequence/connector_odoo2odoo.puml)
 
 ### CI/CD
-![ci_cd_sequence](http://www.plantuml.com/plantuml/png/hLB1Qkim4BplLoovE-_w2AK4ab8AEPJq2rHf4ulAaYkjNFBtjQt6SUKO6jgJs9dPqKexwy32SwmCi6P3k7dwjzdY2xr7if9mgyNHYmf0I7OUjzIGSJNvhtf7GhK533WMzxZOEIaCxgbsGRUgqsA5HyqeNLLf1fZoSrso9FbMYCYjTVr_VCrTKLpjg4K8w3mUX3Qaii4UDU_4QngcZg54TgYI022HdMmVhKqlr8rWEjUGpdxMrXOVRDDU6489CDGPgQWsxdHn6YXGD0LdRPW2_zgat_DFNT9Zqp-FqVH9FPe4u-w4P5iQFjqwrWSj1Mjd0PRBvSnoDfuwiuhyaT1tEGoyEg-fsrWb0e_Nane1Z7Cr868AvJTFwLJdrMZwG65LdqIotAipdnxBNp0GYd8vMGKmkJ6D3rFvRJ5xzawDStO1SZgBoC20eclel56G9Qbew0QpSLOI_CTXMPDLiJAV)
+![ci_cd_sequence](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/etoanik/plantuml/master/Sequence/ci_cd_sequence.puml)
+
 ## Activity diagram
 
 ### 模組部署
-![deployment](http://www.plantuml.com/plantuml/png/hL71IYmn4BpdAt9yB-0Fk0SN5X51KDWFaDwatGIJT4WwBWlvUCTnHhFEYXxCQQQgKgdgNXU6p3Lu8Tf3fds6430tCS92P4m8BEHmvi_fN2gLQh5AIIQfbC4Nz9I6trs6gEtgGzXk7D_1JcvkMt_POF9qV6GihDIgPzwWS_WOQK6qUqDqubpJqCBW8EfoouDr7kM_KhN6Kgx-Yv4ywImcWm1vZtEn08KnV-drHFdvbmLJ9jFdxL_ivG5Y1Tyhp_gwuQ9nmEYFdr4axC75dm8LRT5KZtyTQSAsa_sx6gCPeqrZbjk3OsrbcsUyeHXHiwDOBhQsig53d5_gLhfSvzBgEiBEZxpuTjU5AGcnncXgyAy0)
+![deployment](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/etoanik/plantuml/master/Activity/deployment.puml)
 
 ## State diagram
 
 ### 簽核狀態
-![flow state](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuIh9BCb9LNY-OU-p1JkUTpSyQ-r-EcSQ5nTGlYHLuUc-rgVhLofKSoaeH6l5AkZgse64W8g10X06MEpPhDNFEdS2nI0CYBe9FSzQ-k5Y8A4dEtgXeWZTEQbf9K2fv_ENFclgH3KLNIsQ4L0zG56Gsu1yY0IS3rEB4AhbuWBx8YM_F0zavvJDBrPtSq4ek4kUzazxjgq3AWfJ2mq8BcXuw9OMmFKhG0KHIjVrFEkOW2xwh7lIywrJkI2cGqIXheB8e0X1Z40HSaZDIm565m00)
+![flow state](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/etoanik/plantuml/master/State/flow_state.puml)
