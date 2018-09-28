@@ -1,0 +1,37 @@
+@startuml
+
+class 問卷 {
+    M2o model_id
+
+    tran2dict()
+}
+
+問卷 "1" *-- "*" 頁籤
+問卷 "1" *-- "*" 問題
+頁籤 "1" *-- "*" 問題
+問題 "1" *-- "*" 欄位
+問題 "1" *-- "*" 列標籤
+欄位 "1" *-- "*" 選項
+
+class SurveyRecord {
+    Integer res_id
+    Text structure
+}
+
+class SurveyValue {
+    Char code
+    Char name
+    Char value
+}
+
+問卷 "1" -- "*" SurveyRecord
+SurveyRecord "1" -- "*" SurveyValue
+
+abstract class AbstractSurvey {
+    _onchange_fields()
+}
+
+AbstractSurvey <|-- CustomSurvey
+SurveyRecord --* CustomSurvey
+
+@enduml

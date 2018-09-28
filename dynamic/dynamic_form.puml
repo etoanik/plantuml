@@ -1,0 +1,20 @@
+@startuml
+class 動態表單 {
+    tran2dict()
+}
+
+動態表單 "1" *-- "*" 欄位
+欄位 "1" *-- "*" 選項
+
+abstract class AbstractDynamicForm {
+    Text form_arch
+    Text form_value
+}
+
+class CustomForm {
+    Text form_arch
+    Text form_value
+}
+
+AbstractDynamicForm <|-- CustomForm
+@enduml
