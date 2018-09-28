@@ -6,7 +6,7 @@
 ![connector_odoo2odoo](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/etoanik/plantuml/master/Class/connector_odoo2odoo.puml)
 
 ### 簽核表單
-![flow](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/etoanik/plantuml/master/Class/flow.puml)
+![flow_class](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/etoanik/plantuml/master/flow/flow_class.puml)
 
 ### 物品主檔
 ![item](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/etoanik/plantuml/master/Class/item.puml)
@@ -44,4 +44,4 @@
 ## State diagram
 
 ### 簽核狀態
-![flow state](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/etoanik/plantuml/master/State/flow_state.puml)
+![flow_state](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/etoanik/plantuml/master/flow/flow_state.puml)
