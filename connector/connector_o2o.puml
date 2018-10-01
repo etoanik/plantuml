@@ -1,0 +1,17 @@
+@startuml
+class connector
+class connector_odoo2odoo #SkyBlue
+class connector_o2o_audit #SkyBlue
+class connector_his #SkyBlue
+class connector_o2o_flow #LightGreen
+class connector_audit_hre #LightGreen
+class connector_his_hre #LightGreen
+
+
+connector <|-- connector_odoo2odoo
+connector <|-- connector_his
+connector_odoo2odoo <|-- connector_o2o_flow
+connector_odoo2odoo <|-- connector_o2o_audit
+connector_o2o_audit <|-- connector_audit_hre
+connector_his <|-- connector_his_hre
+@enduml

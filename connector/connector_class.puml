@@ -19,9 +19,6 @@ class OdooExportMapper #SkyBlue
 class OdooExporter #SkyBlue {
     _get_remote_model()
 }
-class OdooModelExporter #SkyBlue {
-    match_external_record()
-}
 class OdooImporter #SkyBlue {
     _get_remote_model()
 }
@@ -67,8 +64,7 @@ ExportMapper <|-- FlowUserExportMapper
 ConnectorUnit <|-- Synchronizer
 Synchronizer <|-- Exporter
 Exporter <|-- OdooExporter
-OdooExporter <|-- OdooModelExporter
-OdooModelExporter <|-- OdooSyncExporter
+OdooExporter <|-- OdooSyncExporter
 Synchronizer <|-- Importer
 Importer <|-- OdooImporter
 Synchronizer <|-- Deleter

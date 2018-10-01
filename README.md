@@ -3,7 +3,7 @@
 ## Class Diagram
 
 ### Connector odoo2odoo
-![connector_odoo2odoo](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/etoanik/plantuml/master/Class/connector_odoo2odoo.puml)
+![connector_class](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/etoanik/plantuml/master/connector/connector_class.puml)
 
 ### 簽核表單
 ![flow_class](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/etoanik/plantuml/master/flow/flow_class.puml)
@@ -31,7 +31,7 @@
 ## Sequence diagram
 
 ### Odoo Connector
-![connector_odoo2odoo](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/etoanik/plantuml/master/Sequence/connector_odoo2odoo.puml)
+![connector_sequence](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/etoanik/plantuml/master/connector/connector_sequence.puml)
 
 ### CI/CD
 ![ci_cd_sequence](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/etoanik/plantuml/master/Sequence/ci_cd_sequence.puml)
