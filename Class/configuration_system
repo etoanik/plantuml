@@ -1,0 +1,125 @@
+@startuml
+title 構型系統
+
+class Unit(1M) {
+  會計編號 UNIT_ID
+}
+
+class Configuration(2M) {
+  會計編號 UNIT_ID
+  族群結構碼 HSC
+  單機試別碼 CID
+}
+
+class Device(3M) {
+  單機識別碼 CID
+  品項識別碼 NIIN
+}
+
+class LinkingDoc(4M) {
+  族群結構碼 ESWBS
+  會計編號 UNIT_ID
+  登錄號 REGISTER_NO
+}
+
+class TechDoc(9M) {
+  登錄號 REGISTER_NO
+}
+
+class Ship {
+  會計編號 UNIT_ID
+}
+
+class UnitTechDoc {
+  會計編號 UNIT_ID
+}
+
+class DeviceFeature(16M) {
+  單機識別碼CID
+  單機特性說明序號
+  單機特性說明
+}
+
+class DeviceParts(18M) {
+  單機識別碼 CID
+  品項識別碼 NIIN
+  
+}
+
+class PartNumber(19M) {
+  品項識別碼 NIIN
+  配件號碼
+  廠商來源代號
+}
+
+class PartMaker(20M) {
+  品項識別碼NIIN
+  配件號碼
+  廠家登記代號
+  廠商來源代號
+}
+
+class PartNumberFile {
+  品項識別碼 NIIN
+  檔案路徑
+}
+
+class PartNumberChangeRpt {
+  檔案名稱
+  檔案路徑
+}
+
+class PartSubstitute {
+  品項識別碼 NIIN
+  代用品之品項識別碼
+}
+
+class 代碼檔.EquipDistinction {
+  裝備區分代號
+  裝備區分名稱
+}
+
+class 代碼檔.EquipUseDistinction {
+  裝備使用代號
+  裝備使用代號名稱
+}
+
+class 代碼檔.Ex1Distinction {
+  序號區分代號
+  序號區分代號名稱
+}
+
+class 代碼檔.ImportanceCode {
+  重要性代號
+  重要性代號名稱
+}
+
+class 代碼檔.ManufactureCountry {
+  製造國別代號
+  國家代號名稱
+}
+
+class 代碼檔.SubClassification {
+  次分類代號
+  次分類名稱
+}
+
+class 代碼檔.CccCode {
+  司令部管制代號
+  司令部管制代號名稱
+}
+
+"Unit(1M)" "1" *-- "many" "Configuration(2M)"
+"Unit(1M)" "1" *-up- "many" "Ship" : 會計編號 UNIT_ID
+"Unit(1M)" "1" *-up- "many" "UnitTechDoc" : 會計編號 UNIT_ID
+"Configuration(2M)" *-left- "Device(3M)" : 單機識別碼 CID
+"Device(3M)" "1" *-left- "many" "DeviceFeature(16M)" : 單機試別碼 CID
+"Device(3M)" "1" *-- "many" "DeviceParts(18M)" : 單機識別碼 CID
+"Configuration(2M)" "1" *-right- "many" "LinkingDoc(4M)" : ESWBS
+"LinkingDoc(4M)" *-- "TechDoc(9M)" : 登錄號 REGISTER_NO
+"DeviceParts(18M)" *-- "PartNumber(19M)" : 品項識別碼 NIIN
+"PartNumber(19M)" "1" *-- "many" "PartMaker(20M)" : 品項識別碼 NIIN
+"PartNumber(19M)" "1" *-- "many" "PartNumberFile" : 品項識別碼 NIIN
+"PartNumber(19M)" .right. "PartNumberChangeRpt"
+"PartNumber(19M)" o-left- "PartSubstitute" : 品項識別碼 NIIN
+@enduml
